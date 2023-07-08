@@ -3,13 +3,13 @@ import data from "../helper/data.js";
 
 const PictureHolder = () => {
   return (
-    <div>
+    <>
       {data.map((item, index) => (
         <div key={index}>
           <Picture {...item} />
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
